@@ -4,17 +4,32 @@
     box-sizing: border-box;
 }
 
-.nav{
+.nav {
+
+    height: 60px;
+    width: 100%;
+    background: pink;
     text-decoration: none;
+}
+
+.links {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     text-decoration: none;
-    color: white;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    background: rgb(111, 173, 213);
-    background: linear-gradient(90deg, rgba(111, 173, 213, 1) 0%, rgba(123, 42, 204, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    color: purple;
+    padding-top: 15px;
+}
+
+.menu{
+  color: purple;
+  list-style: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .links {
+        display: none;
+    }
 }

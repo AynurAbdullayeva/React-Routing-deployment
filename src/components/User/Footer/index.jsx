@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserFooter = () => {
   return (
-    <div>
+    <div style={{marginTop:"20%"}}>
       User Footer
     </div>
   )

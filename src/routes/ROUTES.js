@@ -1,17 +1,12 @@
 import UserRoot from "../pages/User/UserRoot";
 import Home from "../pages/User/Home";
-import EmployeesUser from "../pages/User/EmployeesUser";
-import AdminPanel from "../pages/User/AdminPanel";
-import Basket from "../pages/User/Basket";
-import EmployeeDetail from '../pages/User/EmployeeDetail';
+import About from "../pages/User/About";
+import Contact from "../pages/User/Contact";
+import Register from "../pages/User/Register";
+import Services from "../pages/User/Services";
+import Login from "../pages/User/Login";
 import NotFound from "../pages/User/NotFound";
 
-
-import AdminRoot from "../pages/Admin/AdminRoot";
-import Dashboard from "../pages/Admin/Dashboard";
-import EmployeesAdmin from "../pages/Admin/EmployeesAdmin";
-import AddEmployee from "../pages/Admin/AddEmployee";
-import EditEmployee from "../pages/Admin/EditEmployee";
 
 
 export const ROUTES = [
@@ -24,50 +19,34 @@ export const ROUTES = [
                 element: <Home />
             },
             {
-                path: 'employees',
-                element: <EmployeesUser />
+                path: 'about',
+                element: <About/>
             },
             {
-                path: 'adminpanel',
-                element: <AdminPanel />
+                path: 'contact',
+                element: <Contact/>
+
             },
             {
-                path: 'basket',
-                element: <Basket />
+                path: 'register',
+                element: <Register/>
+
             },
             {
-                path: 'employees/:id',
-                element: <EmployeeDetail />
+                path: 'services',
+                element: <Services/>
+            },
+            {
+                path: 'login',
+                element: <Login/>
             },
             {
                 path: '*',
-                element: <NotFound />
+                element: <NotFound/>
             }
 
         ]
-    },
-    {
-        path: '/admin',
-        element: <AdminRoot />,
-        children: [
-            {
-                path: '',
-                element: <Dashboard />
-            },
-            {
-                path: 'employees',
-                element: <EmployeesAdmin />
-            },
-            {
-                path: 'add-employee',
-                element: <AddEmployee />
-            },
-            {
-                path: 'employees/edit/:id',
-                element: <EditEmployee />
-            },
-
-        ]
+    
 
     }
 ]

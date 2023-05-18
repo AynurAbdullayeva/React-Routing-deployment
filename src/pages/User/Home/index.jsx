@@ -1,11 +1,15 @@
-import React from 'react'
-import style from "./index.module.css"
+import React from 'react';
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
-    <div>
-      <img style={{width:"50%", height:"50%", display:"flex", justifyContent:"center", alignItems:"center"}} src="https://img.freepik.com/premium-photo/lazy-tired-white-british-cat-lying-laptop-concept-online-learning-work-from-home-self-isolation-humor_129479-871.jpg?w=2000" alt="sekil" />
-    </div>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home page</title>
+      </Helmet>
+      <h2 style={{ color: "hotpink", display: "flex", alignItems: "center", justifyContent: "center", marginTop: "20%" }}>Home</h2>
+    </>
   )
 }
 
